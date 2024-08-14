@@ -7,7 +7,7 @@ Programming Rust for ESP32 on the Fri3d Badge workshop
 
 As it can take quite some time to get started, it is best if you setup the toolchain and try to compile and run the test program on the badge before the workshop starts. If not, you can easily spend the whole workshop on just the setup. If you experience any issues, try to find me ([Mathy Vanvoorden](https://github.com/MathyV)) during the camp in the CoderDojo Village or send me a message on Discord (username: mathyvanvoorden) or in the Fri3d Discord #badge channel.
 
-First of all, choose on which system you want to develop the code:
+First of all, choose on which system you want to develop. Note that no matter which platform you choose, you will need quite some free disk space (15GB+) for all the required toolchains and libraries so make sure you are set. If you go the WSL route, count an additional 10 GB just for the OS.
 
 * **Linux native**: if you have a native Linux installation available, it will probably give you the best experience
   
