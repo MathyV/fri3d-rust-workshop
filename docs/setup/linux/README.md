@@ -30,7 +30,5 @@ espup install
 Install additional tools
 ```
 cargo install ldproxy espflash
-cargo install --locked --git https://github.com/esp-rs/espflash cargo-espflash
+cargo install --locked cargo-espflash
 ```
-(There currently is an issue with cargo-espflash preventing it to be built, that's why we build from Git, once cargo-espflash@3.1.1 or higher is released, you can install the standard version again)
-

@@ -28,4 +28,17 @@ Unsurprisingly, the setup instructions to install Rust inside your VM are exactl
 
 After you've finished these steps, come back here to finalize your WSL setup.
 
+## Install tools to USB forward to WSL
+* In host Windows
+  * Install https://github.com/dorssel/usbipd-win/releases
+* In WSL linux
+  * `sudo apt install linux-tools-virtual hwdata`
+  * `sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*/usbip 20`
+
+### Forward badge USB to WSL
+* In host Windows PowerShell with administrator rights
+  * `usbipd wsl list`
+    * In the list you will find a line with "Silicon Labs CP210x USB to UART Bridge" with in the very front of the line a bus ID, in my case 2-1
+  * `usbipd wsl attach --busid 2-1`
+
 ## Troubleshooting

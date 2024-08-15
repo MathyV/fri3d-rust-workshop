@@ -20,3 +20,29 @@ First of all, choose on which system you want to develop. Note that no matter wh
 * **MacOS native**: while it can work, I don't have an Apple to test and document the process, feel free to create a PR with detailed instructions
 
 Follow the setup instructions for your platform of choice and come back here when ready.
+
+## Building the code
+
+### Clone this repository
+```
+git clone https://github.com/MathyV/fri3d-rust-workshop
+cd example
+```
+
+### Building the example code
+```
+source ~/export-esp.sh
+cargo build
+```
+
+### Flashing the image
+```
+cargo espflash flash
+```
+
+### To build and flash in 1 step
+```
+cargo run
+```
+
+You should see a `Hello, world!` message on the console and the lights on your badge should start flickering.
