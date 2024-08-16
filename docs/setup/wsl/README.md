@@ -4,7 +4,7 @@ This is a very rough guide, if you get stuck feel free to reach out but first do
 
 ## Setup WSL
 
-First of all, if you don't have WSL installed yet, you need to do this. The setup instructions are available [at Microsoft]() but here is the TL;DR:
+First of all, if you don't have WSL installed yet, you need to do this. The setup instructions are available [at Microsoft](https://learn.microsoft.com/en-us/windows/wsl/install) but here is the TL;DR:
 
 First, run a Command Prompt in Administrator mode by right clicking the shortcut and selecting `Run as Administrator`
 ![image](https://github.com/user-attachments/assets/6af91c76-9825-42cf-9721-e7b75f03e034)
