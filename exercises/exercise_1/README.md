@@ -33,3 +33,11 @@ Here's some extra information if you need it:
 * [Flow of Control in Rust](https://doc.rust-lang.org/rust-by-example/flow_control.html)
 * [String formatting](https://doc.rust-lang.org/rust-by-example/std/str.html?highlight=string#strings). TIP: `log::info` also has a macro `log::info!`
 * [Sleep](https://doc.rust-lang.org/std/thread/fn.sleep.html)
+
+## Solution
+
+You can find the solution [here](./solution)
+
+## Next exercise
+
+When you're done, proceed to the [second exercise](../exercise_2).
