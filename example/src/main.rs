@@ -27,7 +27,8 @@ fn main() {
     println!("Start NeoPixel rainbow!");
 
     let mut hue = unsafe { esp_random() } as u8;
-    loop {
+    loop
+    {
         let pixels = std::iter::repeat(hsv2rgb(Hsv {
             hue,
             sat: 255,

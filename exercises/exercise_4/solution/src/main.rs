@@ -1,4 +1,6 @@
 use esp_idf_hal::prelude::Peripherals;
+use esp_idf_hal::gpio::*;
+use esp_idf_hal::task::*;
 use smart_leds::{RGB8};
 use smart_leds_trait::SmartLedsWrite;
 use std::thread::sleep;
@@ -25,18 +27,29 @@ fn main() {
         peripherals.pins.gpio12,
     ).unwrap();
 
+    let mut button = PinDriver::input(peripherals.pins.gpio39).unwrap();
+    button.set_pull(Pull::Up).unwrap();
+
     let mut data: [RGB8; NUM_LEDS] = [RGB8::default(); NUM_LEDS];
     let empty: [RGB8; NUM_LEDS] = [RGB8::default(); NUM_LEDS];
 
-    loop
-    {
-        for i in 0..NUM_LEDS
-        {
-            log::info!("Counter: {}", i);
-            data[i].b = 0x33;
-            ws2812.write(data).unwrap();
-            sleep(Duration::from_millis(500));
-            data = empty;
+    block_on(
+        async {
+            loop
+            {
+                ws2812.write(empty).unwrap();
+
+                button.wait_for_low().await.unwrap();
+
+                for i in 0..NUM_LEDS
+                {
+                    log::info!("Counter: {}", i);
+                    data[i].b = 0x33;
+                    ws2812.write(data).unwrap();
+                    sleep(Duration::from_millis(500));
+                    data = empty;
+                }
+            }
         }
-    }
+    );
 }

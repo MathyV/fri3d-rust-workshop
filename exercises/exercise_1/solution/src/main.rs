@@ -11,7 +11,8 @@ fn main() {
 
     log::info!("Hello, world!");
 
-    loop{
+    loop
+    {
         for i in 0..5
         {
             log::info!("Counter: {}", i);

@@ -41,4 +41,4 @@ You can find the solution [here](./solution)
 
 ## Next exercise
 
-When you're done, proceed to the [second exercise](../exercise_3).
+When you're done, proceed to the [third exercise](../exercise_3).
