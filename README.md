@@ -17,7 +17,9 @@ First of all, choose on which system you want to develop. Note that no matter wh
   [WSL Setup Instructions](./docs/setup/wsl)
 * **Windows native**: while it can work, my time is limited, feel free to create a PR with detailed instructions
 * **MacOS with a VM**: you can run a Linux VM and follow the **Linux native** instructions
-* **MacOS native**: while it can work, I don't have an Apple to test and document the process, feel free to create a PR with detailed instructions
+* **MacOS native**: Using [Homebrew](https://brew.sh/)  
+  
+  [WSL Setup Instructions](./docs/setup/macos)
 
 Follow the setup instructions for your platform of choice and come back here when ready.
 
