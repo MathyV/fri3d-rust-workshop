@@ -1,6 +1,6 @@
 # macOS Setup instructions
 
-I used Homebrew to install Rust.
+You can use Homebrew to install Rust.
 
 If you haven't already install Homebrew first:
 
