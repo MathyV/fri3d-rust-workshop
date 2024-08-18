@@ -12,6 +12,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
+## Install required dependencies
+
+```
+sudo apt-get install libudev-dev
+```
+
 ## Install Rust 
 Follow instructions on https://rustup.rs/
 ```
