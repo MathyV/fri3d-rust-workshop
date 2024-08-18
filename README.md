@@ -28,7 +28,7 @@ Follow the setup instructions for your platform of choice and come back here whe
 ### Clone this repository
 ```
 git clone https://github.com/MathyV/fri3d-rust-workshop
-cd example
+cd fri3d-rust-workshop/example
 ```
 
 ### Building the example code
