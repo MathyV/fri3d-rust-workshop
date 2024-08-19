@@ -19,7 +19,7 @@ First of all, choose on which system you want to develop. Note that no matter wh
 * **MacOS with a VM**: you can run a Linux VM and follow the **Linux native** instructions
 * **MacOS native**: Using [Homebrew](https://brew.sh/)  
   
-  [WSL Setup Instructions](./docs/setup/macos)
+  [MacOS Setup Instructions](./docs/setup/macos)
 
 Follow the setup instructions for your platform of choice and come back here when ready.
 
